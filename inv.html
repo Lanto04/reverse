@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <input type="text" id="name">
+        <button onclick="myFunction()">Générer</button>
+        <p id="demo"></p>
+        <script>   
+            
+            function myFunction() { 
+            var mot = document.getElementById('name').value;
+            var test = mot.split('').reverse().join(''); 
+            document.getElementById("demo").innerHTML = test;
+            }
+            </script>
+    </body>
+</html>
